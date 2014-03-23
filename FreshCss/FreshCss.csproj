@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9CF4A6A-1407-4874-AAE3-1B1DC8918F6A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FreshCss</RootNamespace>
+    <AssemblyName>FreshCss</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="03_Photo-Stack\img\BadBoys.jpg" />
+    <Content Include="03_Photo-Stack\img\champion.png" />
+    <Content Include="03_Photo-Stack\img\ok.png" />
+    <Content Include="03_Photo-Stack\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="03_Photo-Stack\Site.less" />
+    <Content Include="05_Spin-Logon\img\bg_center.jpg" />
+    <Content Include="05_Spin-Logon\img\bg_tile.jpg" />
+    <Content Include="05_Spin-Logon\img\clean_form_bg.jpg" />
+    <Content Include="05_Spin-Logon\img\click_here.png" />
+    <Content Include="05_Spin-Logon\img\login_form_bg.jpg" />
+    <Content Include="05_Spin-Logon\img\recover_form_bg.jpg" />
+    <Content Include="05_Spin-Logon\Index.html" />
+    <Content Include="05_Spin-Logon\script.js" />
+    <Content Include="05_Spin-Logon\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="05_Spin-Logon\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <Content Include="04_Signup\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="04_Signup\Site.less" />
+    <Content Include="05_Spin-Logon\Site.less" />
+    <Content Include="07_CssSlider\css\slider.css" />
+    <Content Include="07_CssSlider\css\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
+    <Content Include="07_CssSlider\css\styles.less" />
+    <Content Include="09_LogonRegoFormV2\css\animate-custom.css" />
+    <Content Include="09_LogonRegoFormV2\css\demo.css" />
+    <Content Include="09_LogonRegoFormV2\css\style.css" />
+    <Content Include="09_LogonRegoFormV2\css\style2.css" />
+    <Content Include="09_LogonRegoFormV2\css\style3.css" />
+    <Content Include="09_LogonRegoFormV2\Styles.css">
+      <DependentUpon>Styles.less</DependentUpon>
+    </Content>
+    <Content Include="09_LogonRegoFormV2\Styles.less" />
+    <Content Include="10_ResponsiveContentNavigator\css\demo.css" />
+    <Content Include="10_ResponsiveContentNavigator\css\fonts\BebasNeue-webfont.svg" />
+    <Content Include="10_ResponsiveContentNavigator\css\fonts\Dharma Type Font License.txt" />
+    <Content Include="10_ResponsiveContentNavigator\css\style1.css" />
+    <Content Include="10_ResponsiveContentNavigator\css\style2.css" />
+    <Content Include="10_ResponsiveContentNavigator\css\Style3.css">
+      <DependentUpon>Style3.less</DependentUpon>
+    </Content>
+    <Content Include="10_ResponsiveContentNavigator\css\Style3.min.css">
+      <DependentUpon>Style3.css</DependentUpon>
+    </Content>
+    <Content Include="10_ResponsiveContentNavigator\css\style4.css" />
+    <Content Include="10_ResponsiveContentNavigator\css\style5.css" />
+    <Content Include="10_ResponsiveContentNavigator\images\1.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\10.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\11.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\12.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\13.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\14.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\15.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\2.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\3.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\4.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\5.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\6.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\7.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\8.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\9.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\arrow.png" />
+    <Content Include="10_ResponsiveContentNavigator\images\bg.jpg" />
+    <Content Include="10_ResponsiveContentNavigator\images\ImageAttribution.txt" />
+    <Content Include="10_ResponsiveContentNavigator\index.html" />
+    <Content Include="10_ResponsiveContentNavigator\index2.html" />
+    <Content Include="10_ResponsiveContentNavigator\index3.html" />
+    <Content Include="10_ResponsiveContentNavigator\index4.html" />
+    <Content Include="10_ResponsiveContentNavigator\index5.html" />
+    <Content Include="11_FullScreenOverlay\css\demo.css" />
+    <Content Include="11_FullScreenOverlay\css\normalize.css" />
+    <Content Include="11_FullScreenOverlay\css\style1.css" />
+    <Content Include="11_FullScreenOverlay\css\style10.css" />
+    <Content Include="11_FullScreenOverlay\css\style11.css" />
+    <Content Include="11_FullScreenOverlay\css\style12.css" />
+    <Content Include="11_FullScreenOverlay\css\style2.css" />
+    <Content Include="11_FullScreenOverlay\css\style3.css" />
+    <Content Include="11_FullScreenOverlay\css\style5.css" />
+    <Content Include="11_FullScreenOverlay\css\style6.css" />
+    <Content Include="11_FullScreenOverlay\css\style7.css" />
+    <Content Include="11_FullScreenOverlay\css\style8.css" />
+    <Content Include="11_FullScreenOverlay\css\style9.css" />
+    <Content Include="11_FullScreenOverlay\fonts\codropsicons\codropsicons.svg" />
+    <Content Include="11_FullScreenOverlay\fonts\codropsicons\license.txt" />
+    <Content Include="11_FullScreenOverlay\img\cross.png" />
+    <Content Include="11_FullScreenOverlay\index.html" />
+    <Content Include="11_FullScreenOverlay\index10.html" />
+    <Content Include="11_FullScreenOverlay\index11.html" />
+    <Content Include="11_FullScreenOverlay\index12.html" />
+    <Content Include="11_FullScreenOverlay\index2.html" />
+    <Content Include="11_FullScreenOverlay\index3.html" />
+    <Content Include="11_FullScreenOverlay\index5.html" />
+    <Content Include="11_FullScreenOverlay\index6.html" />
+    <Content Include="11_FullScreenOverlay\index7.html" />
+    <Content Include="11_FullScreenOverlay\index8.html" />
+    <Content Include="11_FullScreenOverlay\index9.html" />
+    <Content Include="11_FullScreenOverlay\js\classie.js" />
+    <Content Include="11_FullScreenOverlay\js\demo1.js" />
+    <Content Include="11_FullScreenOverlay\js\demo10.js" />
+    <Content Include="11_FullScreenOverlay\js\demo12.js" />
+    <Content Include="11_FullScreenOverlay\js\demo7.js" />
+    <Content Include="11_FullScreenOverlay\js\demo9.js" />
+    <Content Include="11_FullScreenOverlay\js\modernizr.custom.js" />
+    <Content Include="11_FullScreenOverlay\js\snap.svg-min.js" />
+    <Content Include="12_3DImageGallery\css\demo.css" />
+    <Content Include="12_3DImageGallery\css\style.css" />
+    <Content Include="12_3DImageGallery\img\arrows.png" />
+    <Content Include="12_3DImageGallery\img\browser.png" />
+    <Content Include="12_3DImageGallery\img\ElChorro.JPG" />
+    <Content Include="12_3DImageGallery\img\Siurana.JPG" />
+    <Content Include="12_3DImageGallery\img\MisjaPec1.jpg" />
+    <Content Include="12_3DImageGallery\img\MisjaPec2.jpg" />
+    <Content Include="12_3DImageGallery\img\PeakDistrict.jpg" />
+    <Content Include="12_3DImageGallery\img\BigBossFont.JPG" />
+    <Content Include="12_3DImageGallery\Index.html" />
+    <Content Include="12_3DImageGallery\js\jquery.gallery.js" />
+    <Content Include="13_LogonV3\css\animate.css" />
+    <Content Include="13_LogonV3\css\reset.css" />
+    <Content Include="13_LogonV3\css\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
+    <Content Include="13_LogonV3\css\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
+    <Content Include="13_LogonV3\Index.html" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="10_ResponsiveContentNavigator\css\fonts\BebasNeue-webfont.eot" />
+    <Content Include="10_ResponsiveContentNavigator\css\fonts\BebasNeue-webfont.ttf" />
+    <Content Include="10_ResponsiveContentNavigator\css\fonts\BebasNeue-webfont.woff" />
+    <Content Include="10_ResponsiveContentNavigator\css\Style3.less" />
+    <Content Include="10_ResponsiveContentNavigator\images\Thumbs.db" />
+    <Content Include="11_FullScreenOverlay\fonts\codropsicons\codropsicons.eot" />
+    <Content Include="11_FullScreenOverlay\fonts\codropsicons\codropsicons.ttf" />
+    <Content Include="11_FullScreenOverlay\fonts\codropsicons\codropsicons.woff" />
+    <Content Include="11_FullScreenOverlay\img\.DS_Store" />
+    <Content Include="11_FullScreenOverlay\img\Thumbs.db" />
+    <Content Include="11_FullScreenOverlay\README.md" />
+    <Content Include="13_LogonV3\css\styles.less" />
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <Content Include="06_ProductShowcase\css\Styles.css" />
+    <Content Include="06_ProductShowcase\img\arrows.png" />
+    <Content Include="06_ProductShowcase\img\bg.jpg" />
+    <Content Include="06_ProductShowcase\img\nexus_1.jpg" />
+    <Content Include="06_ProductShowcase\img\nexus_2.jpg" />
+    <Content Include="06_ProductShowcase\img\nexus_3.jpg" />
+    <Content Include="06_ProductShowcase\img\nexus_4.jpg" />
+    <Content Include="06_ProductShowcase\img\nexus_5.jpg" />
+    <Content Include="06_ProductShowcase\Index.html" />
+    <Content Include="06_ProductShowcase\js\script.js" />
+    <Content Include="07_CssSlider\css\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
+    <Content Include="07_CssSlider\img\slide1.png" />
+    <Content Include="07_CssSlider\img\slide2.png" />
+    <Content Include="07_CssSlider\img\slide3.png" />
+    <Content Include="07_CssSlider\img\slide4.png" />
+    <Content Include="07_CssSlider\img\slide5.png" />
+    <Content Include="07_CssSlider\img\slide6.png" />
+    <Content Include="07_CssSlider\img\slide7.png" />
+    <Content Include="07_CssSlider\img\thumb1.png" />
+    <Content Include="07_CssSlider\img\thumb2.png" />
+    <Content Include="07_CssSlider\img\thumb3.png" />
+    <Content Include="07_CssSlider\img\thumb4.png" />
+    <Content Include="07_CssSlider\img\thumb5.png" />
+    <Content Include="07_CssSlider\img\thumb6.png" />
+    <Content Include="07_CssSlider\img\thumb7.png" />
+    <Content Include="07_CssSlider\Index.html" />
+    <Content Include="08_tabs\Index.html" />
+    <None Include="08_tabs\styles.less" />
+    <Content Include="08_tabs\styles.css">
+      <DependentUpon>styles.less</DependentUpon>
+    </Content>
+    <Content Include="08_tabs\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
+    <Content Include="09_LogonRegoFormV2\Index.html" />
+    <Content Include="09_LogonRegoFormV2\Styles.min.css">
+      <DependentUpon>Styles.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\impress.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="03_Photo-Stack\Index.html" />
+    <Content Include="02_Accordian\Checkbox - Copy.css">
+      <DependentUpon>Radio.less</DependentUpon>
+    </Content>
+    <Content Include="02_Accordian\Radio.html" />
+    <Content Include="02_Accordian\Checkbox - Copy.min.css">
+      <DependentUpon>Checkbox - Copy.css</DependentUpon>
+    </Content>
+    <Content Include="02_Accordian\Checkbox.css">
+      <DependentUpon>Checkbox.less</DependentUpon>
+    </Content>
+    <Content Include="02_Accordian\Checkbox.html" />
+    <Content Include="02_Accordian\Checkbox.min.css">
+      <DependentUpon>Checkbox.css</DependentUpon>
+    </Content>
+    <Content Include="01_DropDownMenu\Index.html" />
+    <Content Include="02_Accordian\Checkbox.less" />
+    <None Include="01_DropDownMenu\Site.less" />
+    <Content Include="01_DropDownMenu\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="01_DropDownMenu\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <Content Include="03_Photo-Stack\img\whocares.jpg" />
+    <Content Include="03_Photo-Stack\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <Content Include="04_Signup\Index.html" />
+    <Content Include="04_Signup\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\modernizr-2.7.1.js" />
+    <Content Include="Web.config" />
+    <Content Include="02_Accordian\Radio.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="13_LogonV3\js\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64958</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64958/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

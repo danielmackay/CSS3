@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head class="no-js">
+  <title></title>
+  <link href="Site.css" rel="stylesheet" />
+  <script src="../Scripts/modernizr-2.7.1.js"></script>
+</head>
+<body>
+  <div id="formContainer">
+    <form id="login" method="post">
+      <a href="#" id="flipToRecover" class="flipLink">Forgot?</a>
+      <input type="text" name="loginEmail" id="loginEmail" placeholder="Email" />
+      <input type="password" name="loginPass" id="loginPass" placeholder="Password" />
+      <input type="submit" name="submit" value="Login" />
+    </form>
+
+    <form id="recover" method="post">
+      <a href="#" id="flipToLogin" class="flipLink">Login?</a>
+      <input type="text" name="recoverEmail" id="recoverEmail" placeholder="Email" />
+      <input type="submit" name="submit" value="Recover" />
+    </form>
+  </div>
+  
+  <script src="../Scripts/jquery-2.1.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
